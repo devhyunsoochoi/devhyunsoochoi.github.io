@@ -100,16 +100,32 @@ html {
     .column + .column {
         margin-left: 0;
     }
+
+    .hire {
+      display: none;
+    }
+
+    .intro {
+      text-align: center;
+    }
+
+    .photo {
+      width: 100px;
+      height: 100px;
+      margin: 0 auto;
+    }
+
 }
 
 /***************
 CONTAINER
 ***************/
-.container {
-  margin: 0 auto;
-  padding: 0 30px 0 30px;
+@media only screen and (min-width: 550px) {
+  .container {
+    margin: 0 auto;
+    padding: 0 30px 0 30px;
+  }
 }
-
 /***************
 NAVIGATION
 ***************/
@@ -149,7 +165,6 @@ button {
   letter-spacing: 2px;
   font-weight: 300;
 }
-
 /***************
 INTRODUCTION
 ***************/
@@ -194,6 +209,5 @@ INTRODUCTION
 .photo {
   border: #404040 dotted thin;
   height: 100px;
-  width: 100px;
   border-radius: 100%;
 }
