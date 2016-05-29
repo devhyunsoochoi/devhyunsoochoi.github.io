@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    $("nav").click(function() {
+    $("nav button").click(function() {
       $("nav > a").fadeToggle("slow");
   });
 
