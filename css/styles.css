@@ -136,12 +136,24 @@ header {
   align-items: center;
 }
 
-nav {
-  font-size: 20px;
+header nav button {
+  margin-right: 20px;
 }
 
-nav i {
-  color: black;
+nav a {
+  display: none;
+  text-decoration: none;
+  margin: 0 10px 0 10px;
+  text-transform: uppercase;
+  color: #404040;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+nav a:last-child {
+  margin: 0;
 }
 
 /***************
@@ -208,6 +220,7 @@ INTRODUCTION
 
 .photo {
   border: #404040 dotted thin;
-  height: 100px;
+  min-height: 100px;
+  min-width: 100px;
   border-radius: 100%;
 }
