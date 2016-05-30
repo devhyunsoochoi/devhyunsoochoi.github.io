@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
 }
 
 /********************
@@ -28,6 +29,17 @@ REUSABLE CLASSES
 }
 
 /********************
+PROFILE IMAGE
+********************/
+
+.profile-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  background-image: url("../image/smallme.png");
+}
+
+/********************
 HEADER
 ********************/
 header {
@@ -39,15 +51,31 @@ header h1 {
   font-size: 2em;
 }
 
+.intro > p {
+  padding-top: 10px;
+}
+/********************
+NAVIGATION
+********************/
 .primary-nav {
-  margin-top: 100px;
-  display: inline-block;
-  padding: 30px;
-  border: thin solid #363835;
+  margin-top: 55px;
 }
 
-.primary-nav a {
-  font-size: 30px;
-  padding: 0 30px 0 30px;
-  border-right: thin solid #363835;
+.primary-nav > a:hover {
+  background-color: #363835;
+  color: #f3d65e;
+  transition: background 0.2s, color 0.2s;
+}
+
+.primary-nav > a {
+  float: left;
+  font-size: 1.000em;
+  padding: 1.250em 2.500em;
+  border: thin #363835 solid;
+  text-decoration: none;
+  color: #363835;
+}
+
+.primary-nav > a:nth-child(-n+2) {
+  border-right: none;
 }
