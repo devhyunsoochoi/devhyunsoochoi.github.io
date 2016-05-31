@@ -1,15 +1,9 @@
-* {
-  box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
-}
-
 /********************
 REUSABLE CLASSES
 ********************/
 
 .align-center {
   text-align: center;
-  vertical-align: top;
 }
 
 .vertical-align {
@@ -23,25 +17,19 @@ REUSABLE CLASSES
   margin: 0 auto;
 }
 
-.primary-font {
-  color: #363835;
-  letter-spacing: 2px;
-}
 
 /********************
 PROFILE IMAGE
 ********************/
 
-.profile-img {
-  width: 100px;
-  height: 100px;
+img {
   border-radius: 100%;
-  background-image: url("../image/smallme.png");
 }
 
 /********************
 HEADER
 ********************/
+
 header {
   height: 100vh;
   background-color: #F3D65E;
@@ -49,33 +37,31 @@ header {
 
 header h1 {
   font-size: 2em;
-}
-
-.intro > p {
-  padding-top: 10px;
+  line-height: 50px;
 }
 /********************
 NAVIGATION
 ********************/
-.primary-nav {
-  margin-top: 55px;
+.project,
+.articles,
+.about {
+  display: inline-block;
 }
 
-.primary-nav > a:hover {
+.primary-nav {
+  margin-top: 40px;
+}
+
+.primary-nav a:hover {
   background-color: #363835;
   color: #f3d65e;
   transition: background 0.2s, color 0.2s;
 }
 
-.primary-nav > a {
+.primary-nav a {
   font-size: 16px;
   padding: 20px 40px;
   border: thin #363835 solid;
   text-decoration: none;
   color: #363835;
-  float: left;
-}
-
-.primary-nav > a:nth-child(-n+2) {
-  border-right: none;
 }
