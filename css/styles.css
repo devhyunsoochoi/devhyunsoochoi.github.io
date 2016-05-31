@@ -68,12 +68,12 @@ NAVIGATION
 }
 
 .primary-nav > a {
-  float: left;
   font-size: 16px;
   padding: 20px 40px;
   border: thin #363835 solid;
   text-decoration: none;
   color: #363835;
+  float: left;
 }
 
 .primary-nav > a:nth-child(-n+2) {
