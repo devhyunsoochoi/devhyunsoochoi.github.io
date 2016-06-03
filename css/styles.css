@@ -4,8 +4,7 @@ MAIN PAGE
 
 .intro_background {
   height: 100vh;
-  background-image: url('../image/background.png');
-  background-color: #EFBE66;
+  background: #EFBE66 url('../image/background.png');
   background-blend-mode: multiply;
   display: flex;
   align-content: center;
@@ -16,10 +15,19 @@ MAIN PAGE
   font: normal 5.0rem/8rem 'Lato', sans-serif;
   color: #3c3f4f;
   margin: 0 auto;
+  letter-spacing: 0.1rem;
 }
 
-.intro p::first-line {
+.intro p:first-line {
   color: white;
+}
+
+.intro p:last-child {
+  font-size: 1.8rem;
+  color: white;
+  line-height: 2.2rem;
+  margin-top: 2rem;
+  letter-spacing: 0.1rem;
 }
 
 
