@@ -12,7 +12,7 @@ MAIN PAGE
 }
 
 .intro {
-  font: normal 5.0rem/8rem 'Lato', sans-serif;
+  font: normal 4.5rem/6.5rem 'Lato', sans-serif;
   color: #3c3f4f;
   margin: 0 auto;
   letter-spacing: 0.1rem;
@@ -131,7 +131,11 @@ MAIN PAGE
     }
 
     .intro {
-      font: normal 2.3rem/4rem 'Lato', sans-serif;
+      font: normal 3.3rem/4rem 'Lato', sans-serif;
+    }
+
+    .intro p:last-child {
+      font-size: 1.5rem;
     }
 }
 
@@ -158,6 +162,10 @@ MAIN PAGE
     }
 
     .intro {
-      font: normal 2.3rem/4rem 'Lato', sans-serif;
+      font: normal 2.0rem/4rem 'Lato', sans-serif;
+    }
+
+    .intro p:last-child {
+      font-size: 1.0rem;
     }
 }
