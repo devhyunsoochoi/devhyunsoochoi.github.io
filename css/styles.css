@@ -4,8 +4,9 @@ MAIN PAGE
 
 .intro_background {
   height: 100vh;
-  background: #EFBE66 url('../image/background.png');
-  background-blend-mode: multiply;
+  background-image: url('../image/background_fallback.png');
+  /*background: #efbe66 url('../image/background.png');
+  background-blend-mode: multiply;*/
   display: flex;
   align-content: center;
   align-items: center;
