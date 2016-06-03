@@ -1,4 +1,36 @@
 /********************
+MAIN PAGE
+********************/
+body {
+  background: #EFBE66;
+  height: 100vh;
+}
+
+.wrapper {
+  max-width: 1650px;
+  margin: 0 auto;
+}
+
+.title-wrapper {
+  height: calc(100vh - 42vh);
+  display: flex;
+  box-align: center;
+  align-items: center;
+}
+
+.title {
+  width: 73%;
+  letter-spacing: 0.1em;
+  color: #3c3f4f;
+  font: 400 2.5rem/1.55 'Lato', Sans-serif;
+  margin: 1rem 0 0 16.6666%
+}
+
+.title:first-line {
+  color: white;
+}
+
+/********************
 Grid System
 ********************/
 
@@ -98,9 +130,10 @@ Grid System
     }
 
     .title {
-      font-size: 1.0rem;
+      font-size: 1.75rem;
+      margin: 0;
+      width: 100%;
     }
-
 }
 
 @media only screen and (max-width: 550px) {
@@ -125,29 +158,8 @@ Grid System
     }
 
     .title {
-      font-size: 0.8rem;
+      font-size: 1.30rem;
+      margin: 0;
+      width: 100%;
     }
-}
-
-/********************
-MAIN PAGE
-********************/
-
-header {
-  background: #EFBE66;
-  height: 100vh;
-  padding: 0 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.title {
-  letter-spacing: 0.1em;
-  color: #3c3f4f;
-  font: 400 2.5rem/1.55 'Lato', Sans-serif;
-}
-
-.title:first-line {
-  color: white;
 }
