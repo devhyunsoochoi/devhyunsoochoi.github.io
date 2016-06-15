@@ -1,0 +1,196 @@
+html {
+	box-sizing: border-box;
+	font: normal 14px 'Roboto', sans-serif;
+}
+
+body {
+	background: #002331;
+}
+
+.container {
+	max-width: 1120px;
+	margin: 0 auto;
+}
+
+/***********
+HEADER NAVIGATION
+***********/
+
+header {
+	background: #00202B;
+	text-align: center;
+}
+
+nav ul {
+	float: right;
+}
+
+nav ul li {
+	float: left;
+}
+
+nav li:hover {
+	background: white;
+}
+
+nav li a:hover {
+	color: black;
+}
+
+nav li a,
+.logo {
+	color: white;
+	text-transform: uppercase;
+	padding: 30px ;
+	display: block;
+	font-weight: bold;
+}
+
+.active {
+	background: #FD3D50;
+}
+
+/***********
+	MAIN
+***********/
+main {
+	margin-top: 80px;
+}
+
+.about {
+	height: 350px;
+	background: #E1F1F9;
+}
+
+.hello {
+	height: 350px;
+	display: table;
+}
+
+.hello_text {
+	display: table-cell;
+	vertical-align: middle;
+	padding: 50px;
+}
+
+.hello_text h1 {
+	color: white;
+	font-size: 40px;
+	line-height: 53px;
+	font-weight: 100;
+	letter-spacing: 5px;
+}
+
+.hello_text p {
+	color: #507d8f;
+	line-height: 18px;
+	letter-spacing: 1px;
+}
+
+/**********
+GRID SYSTEM
+**********/
+/* CLEARFIX */
+.row:before,
+.row:after {
+    content: " ";
+    display: table;
+}
+
+.row:after {
+    clear: both;
+}
+
+/* COLUMN */
+.column {
+    position: relative;
+    float: left;
+}
+
+/* GUTTER */
+.column + .column {
+    margin-left: 1.6%;
+}
+
+/* DESKTOP */
+
+.column-1 {
+    width: 6.86666666667%;
+}
+
+.column-2 {
+    width: 15.3333333333%;
+}
+
+.column-3 {
+    width: 23.8%;
+}
+
+.column-4 {
+    width: 32.2666666667%;
+}
+
+.column-5 {
+    width: 40.7333333333%;
+}
+
+.column-6 {
+    width: 49.2%;
+}
+
+.column-7 {
+    width: 57.6666666667%;
+}
+
+.column-8 {
+    width: 66.1333333333%;
+}
+
+.column-9 {
+    width: 74.6%;
+}
+
+.column-10 {
+    width: 83.0666666667%;
+}
+
+.column-11 {
+    width: 91.5333333333%;
+}
+
+.column-12 {
+    width: 100%;
+}
+
+/* OPTIMIZED FOR MOBILE */
+
+@media only screen and (max-width: 550px) {
+    .column-1,
+    .column-2,
+    .column-3,
+    .column-4,
+    .column-5,
+    .column-6,
+    .column-7,
+    .column-8,
+    .column-9,
+    .column-10,
+    .column-11,
+    .column-12 {
+        width: auto;
+        float: none;
+    }
+
+    .column + .column {
+        margin-left: 0;
+    }
+
+		.container {
+			width: auto;
+		}
+
+		.hello_text {
+			padding: 10px;
+			text-align: left;
+		}
+}
