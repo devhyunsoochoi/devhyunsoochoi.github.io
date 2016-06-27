@@ -39,6 +39,7 @@ body {
     border: 1px $learn-more-color solid;
     background: $learn-more-color;
     border-radius: 55px;
+    @include transition(.3s ease-out);
     &:hover {
       background: $body-background;
     }

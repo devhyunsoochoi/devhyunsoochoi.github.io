@@ -111,8 +111,20 @@ ul {
 li {
   float: left;
   list-style: none;
+  -moz-transition: ease-out 0.3s;
+  -o-transition: ease-out 0.3s;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
 }
-/* line 14, ../sass/components/_nav.scss */
+/* line 15, ../sass/components/_nav.scss */
+li:hover {
+  background: #FFFFFF;
+}
+/* line 17, ../sass/components/_nav.scss */
+li:hover a {
+  color: #333333;
+}
+/* line 21, ../sass/components/_nav.scss */
 li a {
   display: block;
   text-transform: uppercase;
@@ -126,17 +138,17 @@ li a {
   padding-left: 20px;
 }
 
-/* line 25, ../sass/components/_nav.scss */
+/* line 32, ../sass/components/_nav.scss */
 .active {
   background: #FD3D50;
 }
 
-/* line 29, ../sass/components/_nav.scss */
+/* line 36, ../sass/components/_nav.scss */
 .logo {
   float: left;
   font-family: "Coves-Light";
 }
-/* line 32, ../sass/components/_nav.scss */
+/* line 39, ../sass/components/_nav.scss */
 .logo a {
   letter-spacing: 3px;
 }
@@ -223,12 +235,16 @@ body:after {
   border: 1px #2fa4f1 solid;
   background: #2fa4f1;
   border-radius: 55px;
+  -moz-transition: ease-out 0.3s;
+  -o-transition: ease-out 0.3s;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
 }
-/* line 42, ../sass/components/_body.scss */
+/* line 43, ../sass/components/_body.scss */
 .name_section button:hover {
   background: #002331;
 }
-/* line 45, ../sass/components/_body.scss */
+/* line 46, ../sass/components/_body.scss */
 .name_section button p {
   font-size: 130%;
   color: #FFFFFF;
@@ -246,7 +262,7 @@ body:after {
   font-family: "Coves-Light";
   src: url('../fonts/Coves-Light.otf?1452492420') format('opentype');
 }
-/* line 20, ../sass/style.scss */
+/* line 21, ../sass/style.scss */
 * {
   box-sizing: border-box;
 }

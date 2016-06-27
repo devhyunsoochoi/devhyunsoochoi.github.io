@@ -11,6 +11,13 @@ ul {
 li {
     float: left;
     list-style: none;
+    @include transition(.3s ease-out);
+    &:hover {
+      background: $white;
+      a {
+        color: $black;
+      }
+    }
   a {
     display: block;
     text-transform: uppercase;
