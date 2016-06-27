@@ -1,39 +1,5 @@
-* {
-  font-family: $roboto-font-stack;
-}
-
-
-.header_container {
+header {
   @include container;
-  background: $nav_background;
-}
-
-.nav_container {
-  @include container(90%);
-}
-
-nav {
-  @include span(12);
-  background: $nav_background;
-}
-
-ul {
-margin: 0;
-float: right;
-  li {
-    float: left;
-    list-style: none;
-    a {
-        display: block;
-        text-transform: uppercase;
-        text-decoration: none;
-        padding: 30px 20px;
-        color: white;
-        font-size: 13px;
-    }
-  }
-}
-
-.active {
-  background-color: #FD3D50;
+  @include margin(0, 0, 100px, 0);
+  background: $header-background;
 }

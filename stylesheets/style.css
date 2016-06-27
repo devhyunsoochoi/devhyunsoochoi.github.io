@@ -1,65 +1,221 @@
-/* line 1, ../sass/components/_header.scss */
-* {
-  font-family: "Roboto", sans-serif;
+/* line 5, ../../../.rvm/gems/ruby-2.2.4/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
 }
 
-/* line 6, ../sass/components/_header.scss */
-.header_container {
+/* line 22, ../../../.rvm/gems/ruby-2.2.4/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../.rvm/gems/ruby-2.2.4/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../.rvm/gems/ruby-2.2.4/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../.rvm/gems/ruby-2.2.4/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../.rvm/gems/ruby-2.2.4/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../.rvm/gems/ruby-2.2.4/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../.rvm/gems/ruby-2.2.4/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../.rvm/gems/ruby-2.2.4/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 106, ../../../.rvm/gems/ruby-2.2.4/gems/compass-core-1.0.3/stylesheets/compass/typography/_vertical_rhythm.scss */
+html {
+  font-size: 100%;
+  line-height: 1.5em;
+}
+
+/* line 1, ../sass/components/_header.scss */
+header {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 100px;
+  margin-left: 0;
   background: #00202B;
 }
 /* line 12, ../../../.rvm/gems/ruby-2.2.4/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
-.header_container:after {
+header:after {
   content: " ";
   display: block;
   clear: both;
 }
 
-/* line 11, ../sass/components/_header.scss */
-.nav_container {
+/* line 1, ../sass/components/_nav.scss */
+nav {
+  background-color: #00202B;
   max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Coves-Bold";
+}
+/* line 12, ../../../.rvm/gems/ruby-2.2.4/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
+nav:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* line 7, ../sass/components/_nav.scss */
+ul {
+  float: right;
+}
+
+/* line 11, ../sass/components/_nav.scss */
+li {
+  float: left;
+  list-style: none;
+}
+/* line 14, ../sass/components/_nav.scss */
+li a {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 80%;
+  text-decoration: none;
+  color: #FFFFFF;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+
+/* line 25, ../sass/components/_nav.scss */
+.active {
+  background: #FD3D50;
+}
+
+/* line 29, ../sass/components/_nav.scss */
+.logo {
+  float: left;
+  font-family: "Coves-Light";
+}
+
+/* line 1, ../sass/components/_body.scss */
+body {
+  background: #002331;
+  font-family: "Coves-Light";
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
 /* line 12, ../../../.rvm/gems/ruby-2.2.4/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
-.nav_container:after {
+body:after {
   content: " ";
   display: block;
   clear: both;
 }
 
-/* line 15, ../sass/components/_header.scss */
-nav {
-  width: 100%;
-  float: left;
-  margin-left: 0;
-  margin-right: 0;
-  background: #00202B;
+/* line 7, ../sass/components/_body.scss */
+.body_container {
+  max-width: 85%;
+  margin-left: auto;
+  margin-right: auto;
 }
-
-/* line 20, ../sass/components/_header.scss */
-ul {
-  margin: 0;
-  float: right;
-}
-/* line 23, ../sass/components/_header.scss */
-ul li {
-  float: left;
-  list-style: none;
-}
-/* line 26, ../sass/components/_header.scss */
-ul li a {
+/* line 12, ../../../.rvm/gems/ruby-2.2.4/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
+.body_container:after {
+  content: " ";
   display: block;
-  text-transform: uppercase;
-  text-decoration: none;
-  padding: 30px 20px;
-  color: white;
-  font-size: 13px;
+  clear: both;
 }
 
-/* line 37, ../sass/components/_header.scss */
-.active {
-  background-color: #FD3D50;
+/* line 11, ../sass/components/_body.scss */
+.skill_box {
+  width: 32.20339%;
+  float: left;
+  margin-right: 1.69492%;
+  background: #effaff;
+  text-align: center;
+  cursor: pointer;
+}
+/* line 16, ../sass/components/_body.scss */
+.skill_box h1 {
+  color: white;
+  padding-top: 100px;
+  padding-right: 50px;
+  padding-bottom: 100px;
+  padding-left: 50px;
+}
+
+/* line 22, ../sass/components/_body.scss */
+.name_section {
+  width: 66.10169%;
+  float: right;
+  margin-right: 0;
+  padding-top: 0;
+  padding-right: 50px;
+  padding-bottom: 0;
+  padding-left: 50px;
+}
+/* line 25, ../sass/components/_body.scss */
+.name_section h1 {
+  color: #FFFFFF;
+  font-size: 200%;
+  padding-top: 20px;
+  padding-right: 0;
+  padding-bottom: 20px;
+  padding-left: 0;
+}
+/* line 30, ../sass/components/_body.scss */
+.name_section p {
+  color: #507D8F;
+}
+
+@font-face {
+  font-family: "Coves-Bold";
+  src: url('../fonts/Coves-Bold.otf?1453356458') format('opentype');
+}
+@font-face {
+  font-family: "Coves-Light";
+  src: url('../fonts/Coves-Light.otf?1452492420') format('opentype');
+}
+/* line 20, ../sass/style.scss */
+* {
+  box-sizing: border-box;
 }

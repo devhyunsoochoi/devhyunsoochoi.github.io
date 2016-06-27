@@ -1,8 +1,22 @@
 // Screen
 // ======
 
-@import "base/fonts";
+// Library imports
+@import "compass/reset";
+@import "susy";
+@import "compass/css3/font-face";
+@import "compass/typography/vertical_rhythm";
 @import "layout/grids";
 @import "partials/mixins";
 @import "partials/variables";
 @import "components/header";
+@import "components/nav";
+@import "components/body";
+
+//Default Font
+@include font-face("Coves-Bold", font-files("Coves-Bold.otf"));
+@include font-face("Coves-Light", font-files("Coves-Light.otf"));
+
+* {
+  box-sizing: border-box;
+}

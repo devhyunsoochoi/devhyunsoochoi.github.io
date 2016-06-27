@@ -1,0 +1,33 @@
+body {
+  background: $body-background;
+  font-family: "Coves-Light";
+  @include container;
+}
+
+.body_container {
+  @include container(85%);
+}
+
+.skill_box {
+  @include span(4 of 12);
+  background: $skill-box-background;
+  text-align: center;
+  cursor: pointer;
+  h1 {
+    color: white;
+    @include padding(100px, 50px, 100px, 50px);
+  }
+}
+
+.name_section {
+  @include span(8 at 5 of 12);
+  @include padding(0, 50px, 0, 50px);
+  h1 {
+    color: $white;
+    font-size: 200%;
+    @include padding(20px, 0, 20px, 0);
+  }
+  p {
+    color: $tranquil;
+  }
+}

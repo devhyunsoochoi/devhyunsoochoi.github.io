@@ -1,0 +1,32 @@
+nav {
+  background-color: $nav-background;
+  @include container(90%);
+  font-family: "Coves-Bold";
+}
+
+ul {
+  float: right;
+}
+
+li {
+    float: left;
+    list-style: none;
+  a {
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 80%;
+    text-decoration: none;
+    color: $nav-menu;
+    @include padding(20px, 20px, 20px, 20px);
+  }
+}
+
+.active {
+  background: $nav-active;
+}
+
+.logo {
+  float: left;
+  font-family: "Coves-Light";
+}

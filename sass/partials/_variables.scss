@@ -1,2 +1,25 @@
-$nav_background: #00202B;
-$default_color: #FFFFFF;
+// Font Stacks
+$lato-font-stack: 'Lato', sans-serif !default;
+
+// Verticle Rhythm
+$base-font-size: 16px;
+$base-line-height: 24px;
+@include establish-baseline;
+
+// Header
+$header-background: #00202B;
+
+// Colors
+$white: #FFFFFF;
+$tranquil: #507D8F;
+
+// Navigation
+$nav-background: #00202B;
+$nav-menu: #FFFFFF;
+$nav-menu-hover: #FFFFFF;
+$nav-menu-hover-link: #161616;
+$nav-active: #FD3D50;
+
+// Body
+$body-background: #002331;
+$skill-box-background: #effaff;

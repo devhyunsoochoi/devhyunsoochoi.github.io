@@ -1,4 +1,3 @@
-require 'compass/import-once/activate'
 require 'susy'
 require 'breakpoint'
 # Require any additional compass plugins here.
