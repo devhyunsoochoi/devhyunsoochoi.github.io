@@ -136,6 +136,10 @@ li a {
   float: left;
   font-family: "Coves-Light";
 }
+/* line 32, ../sass/components/_nav.scss */
+.logo a {
+  letter-spacing: 3px;
+}
 
 /* line 1, ../sass/components/_body.scss */
 body {
@@ -189,22 +193,49 @@ body:after {
   float: right;
   margin-right: 0;
   padding-top: 0;
-  padding-right: 50px;
+  padding-right: 100px;
   padding-bottom: 0;
   padding-left: 50px;
 }
 /* line 25, ../sass/components/_body.scss */
 .name_section h1 {
   color: #FFFFFF;
+  letter-spacing: 0.5px;
   font-size: 200%;
   padding-top: 20px;
   padding-right: 0;
   padding-bottom: 20px;
   padding-left: 0;
 }
-/* line 30, ../sass/components/_body.scss */
+/* line 31, ../sass/components/_body.scss */
 .name_section p {
   color: #507D8F;
+  letter-spacing: 0.5px;
+}
+/* line 35, ../sass/components/_body.scss */
+.name_section button {
+  float: right;
+  cursor: pointer;
+  margin-top: 30px;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  border: 1px #2fa4f1 solid;
+  background: #2fa4f1;
+  border-radius: 55px;
+}
+/* line 42, ../sass/components/_body.scss */
+.name_section button:hover {
+  background: #002331;
+}
+/* line 45, ../sass/components/_body.scss */
+.name_section button p {
+  font-size: 130%;
+  color: #FFFFFF;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
 }
 
 @font-face {
