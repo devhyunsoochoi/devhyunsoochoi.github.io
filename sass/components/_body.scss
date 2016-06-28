@@ -13,8 +13,10 @@ body {
   background: $skill-box-background;
   text-align: center;
   cursor: pointer;
+  position: relative;
+  @include transition(.3s ease-out);
   h1 {
-    color: white;
+    color: $black;
     @include padding(100px, 50px, 100px, 50px);
   }
 }
