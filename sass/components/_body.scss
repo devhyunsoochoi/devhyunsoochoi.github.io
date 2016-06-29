@@ -8,18 +8,12 @@ body {
   @include container(85%);
 }
 
-.skill_box {
+.project-1 {
   @include span(4 of 12);
-  background: $skill-box-background;
-  text-align: center;
-  cursor: pointer;
-  position: relative;
-  @include transition(.3s ease-out);
-  h1 {
-    color: $black;
-    @include padding(100px, 50px, 100px, 50px);
+  height: 300px;
+  background: url("../images/toys.jpg") center no-repeat;
+  background-size: cover;
   }
-}
 
 .name_section {
   @include span(8 at 5 of 12);
@@ -53,20 +47,20 @@ body {
   }
 }
 
-.project-1 {
+.project-2 {
   @include span(8 of 12);
-  @include padding(100px, 0, 100px, 0);
   @include margin(5px, 0, 0, 0);
-  text-align: center;
-  @include linear-gradient($project-1-background, $project-1-background-2);
+  height: 250px;
+  background: url("../images/artella.jpg") center no-repeat;
+  background-size: cover;
 }
 
-.project-2 {
+.project-3 {
   @include span(4 at 9 of 12);
-  @include padding(100px, 0, 100px, 0);
   @include margin(5px, 0, 0, 0);
-  text-align: center;
-  background: $project-2-background;
+  height: 250px;
+  background: url("../images/br.jpg") center no-repeat;
+  background-size: cover;
 }
 
 @include breakpoint(480px 768px) {
@@ -76,8 +70,8 @@ body {
   .name_section {
     @include padding(0, 50px, 0, 50px);
   }
-  .project-1,
-  .project-2 {
+  .project-2,
+  .project-3 {
     @include span(12);
   }
 }
@@ -86,7 +80,7 @@ body {
   .body_container {
     @include container(95%);
     text-align: center;
-    .skill_box {
+    .project-1 {
       display: none;
     }
   }
@@ -98,8 +92,8 @@ body {
       width: 100%;
     }
   }
-  .project-1,
-  .project-2 {
+  .project-2,
+  .project-3 {
     @include span(12);
   }
 }
