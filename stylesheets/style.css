@@ -341,31 +341,81 @@ body:after {
   width: 66.53386%;
   float: left;
   margin-right: 0.39841%;
-  margin-top: 5px;
-  margin-right: 0;
-  margin-bottom: 0;
-  margin-left: 0;
   height: 250px;
   background: url("../images/artella.jpg") center no-repeat;
   background-size: cover;
 }
 
-/* line 58, ../sass/components/_body.scss */
+/* line 57, ../sass/components/_body.scss */
 .project-3 {
   width: 33.06773%;
   float: right;
   margin-right: 0;
-  margin-top: 5px;
-  margin-right: 0;
-  margin-bottom: 0;
-  margin-left: 0;
   height: 250px;
   background: url("../images/br.jpg") center no-repeat;
   background-size: cover;
 }
 
+/* line 64, ../sass/components/_body.scss */
+.project-4 {
+  width: 33.06773%;
+  float: left;
+  margin-right: 0.39841%;
+  height: 250px;
+  background: url("../images/homework_unlocked.jpg") center no-repeat;
+  background-size: cover;
+}
+
+/* line 71, ../sass/components/_body.scss */
+.project-5 {
+  width: 33.06773%;
+  float: left;
+  margin-right: 0.39841%;
+  height: 250px;
+  background: url("../images/mobile_gurus.jpg") center no-repeat;
+  background-size: cover;
+}
+
+/* line 78, ../sass/components/_body.scss */
+.project-6 {
+  width: 33.06773%;
+  float: right;
+  margin-right: 0;
+  height: 250px;
+  background: url("../images/pulstic.jpg") center no-repeat;
+  background-size: cover;
+}
+
+/* line 85, ../sass/components/_body.scss */
+.row {
+  margin-top: 5px;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+}
+
+/* line 89, ../sass/components/_body.scss */
+.project-7 {
+  width: 33.06773%;
+  float: left;
+  margin-right: 0.39841%;
+  height: 250px;
+  background: url("../images/socialix.jpg") center no-repeat;
+  background-size: cover;
+}
+
+/* line 96, ../sass/components/_body.scss */
+.project-8 {
+  width: 66.53386%;
+  float: right;
+  margin-right: 0;
+  height: 500px;
+  background: url("../images/startups.jpg") center no-repeat;
+  background-size: cover;
+}
+
 @media (min-width: 480px) and (max-width: 768px) {
-  /* line 67, ../sass/components/_body.scss */
+  /* line 106, ../sass/components/_body.scss */
   .body_container {
     max-width: 95%;
     margin-left: auto;
@@ -378,7 +428,7 @@ body:after {
     clear: both;
   }
 
-  /* line 70, ../sass/components/_body.scss */
+  /* line 109, ../sass/components/_body.scss */
   .name_section {
     padding-top: 0;
     padding-right: 50px;
@@ -386,9 +436,15 @@ body:after {
     padding-left: 50px;
   }
 
-  /* line 73, ../sass/components/_body.scss */
+  /* line 112, ../sass/components/_body.scss */
+  .project-1,
   .project-2,
-  .project-3 {
+  .project-3,
+  .project-4,
+  .project-5,
+  .project-6,
+  .project-7,
+  .project-8 {
     width: 100%;
     float: left;
     margin-left: 0;
@@ -396,7 +452,7 @@ body:after {
   }
 }
 @media (min-width: 0) and (max-width: 480px) {
-  /* line 80, ../sass/components/_body.scss */
+  /* line 127, ../sass/components/_body.scss */
   .body_container {
     max-width: 95%;
     margin-left: auto;
@@ -409,12 +465,12 @@ body:after {
     display: block;
     clear: both;
   }
-  /* line 83, ../sass/components/_body.scss */
+  /* line 130, ../sass/components/_body.scss */
   .body_container .project-1 {
     display: none;
   }
 
-  /* line 87, ../sass/components/_body.scss */
+  /* line 134, ../sass/components/_body.scss */
   .name_section {
     width: 100%;
     float: left;
@@ -425,19 +481,36 @@ body:after {
     padding-bottom: 50px;
     padding-left: 0;
   }
-  /* line 90, ../sass/components/_body.scss */
+  /* line 137, ../sass/components/_body.scss */
   .name_section button {
     float: none;
     width: 100%;
   }
 
-  /* line 95, ../sass/components/_body.scss */
+  /* line 142, ../sass/components/_body.scss */
   .project-2,
-  .project-3 {
+  .project-3,
+  .project-4,
+  .project-5,
+  .project-6,
+  .project-7,
+  .project-8 {
     width: 100%;
     float: left;
     margin-left: 0;
     margin-right: 0;
+    margin-top: 5px;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+  }
+
+  /* line 152, ../sass/components/_body.scss */
+  .row {
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
   }
 }
 @font-face {

@@ -49,7 +49,6 @@ body {
 
 .project-2 {
   @include span(8 of 12);
-  @include margin(5px, 0, 0, 0);
   height: 250px;
   background: url("../images/artella.jpg") center no-repeat;
   background-size: cover;
@@ -57,11 +56,51 @@ body {
 
 .project-3 {
   @include span(4 at 9 of 12);
-  @include margin(5px, 0, 0, 0);
   height: 250px;
   background: url("../images/br.jpg") center no-repeat;
   background-size: cover;
 }
+
+.project-4 {
+  @include span(4 of 12);
+  height: 250px;
+  background: url("../images/homework_unlocked.jpg") center no-repeat;
+  background-size: cover;
+}
+
+.project-5 {
+  @include span(4 at 5 of 12);
+  height: 250px;
+  background: url("../images/mobile_gurus.jpg") center no-repeat;
+  background-size: cover;
+}
+
+.project-6 {
+  @include span(4 at 9 of 12);
+  height: 250px;
+  background: url("../images/pulstic.jpg") center no-repeat;
+  background-size: cover;
+}
+
+.row {
+  @include margin(5px, 0, 0, 0);
+}
+
+.project-7 {
+  @include span(4 of 12);
+  height: 250px;
+  background: url("../images/socialix.jpg") center no-repeat;
+  background-size: cover;
+}
+
+.project-8 {
+  @include span(8 at 5 of 12);
+  height: 500px;
+  background: url("../images/startups.jpg") center no-repeat;
+  background-size: cover;
+}
+
+// tablet layout
 
 @include breakpoint(480px 768px) {
   .body_container {
@@ -70,11 +109,19 @@ body {
   .name_section {
     @include padding(0, 50px, 0, 50px);
   }
+  .project-1,
   .project-2,
-  .project-3 {
+  .project-3,
+  .project-4,
+  .project-5,
+  .project-6,
+  .project-7,
+  .project-8, {
     @include span(12);
   }
 }
+
+// mobile layout
 
 @include breakpoint(0 480px) {
   .body_container {
@@ -93,7 +140,16 @@ body {
     }
   }
   .project-2,
-  .project-3 {
+  .project-3,
+  .project-4,
+  .project-5,
+  .project-6,
+  .project-7,
+  .project-8, {
     @include span(12);
+    @include margin(5px, 0, 0, 0);
+  }
+  .row {
+    @include margin(0, 0, 0, 0);
   }
 }
