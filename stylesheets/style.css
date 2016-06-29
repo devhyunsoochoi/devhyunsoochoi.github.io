@@ -87,6 +87,15 @@ header:after {
   clear: both;
 }
 
+@media (min-width: 0) and (max-width: 480px) {
+  /* line 8, ../sass/components/_header.scss */
+  header {
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+  }
+}
 /* line 1, ../sass/components/_nav.scss */
 nav {
   background-color: #00202B;
@@ -157,6 +166,83 @@ li a {
   padding-left: 20px;
 }
 
+/* line 46, ../sass/components/_nav.scss */
+.mobile_menu {
+  display: none;
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+  /* line 52, ../sass/components/_nav.scss */
+  nav {
+    text-align: center;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 12, ../../../.rvm/gems/ruby-2.2.4/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
+  nav:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+  /* line 55, ../sass/components/_nav.scss */
+  nav ul {
+    display: block;
+    float: none;
+  }
+  /* line 58, ../sass/components/_nav.scss */
+  nav ul li {
+    display: inline-block;
+    float: none;
+  }
+  /* line 61, ../sass/components/_nav.scss */
+  nav ul li a {
+    font-size: 75%;
+    padding-top: 20px;
+    padding-right: 15px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+  }
+  /* line 67, ../sass/components/_nav.scss */
+  nav .logo {
+    display: block;
+    float: none;
+  }
+}
+@media (min-width: 0) and (max-width: 480px) {
+  /* line 76, ../sass/components/_nav.scss */
+  nav {
+    text-align: center;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 12, ../../../.rvm/gems/ruby-2.2.4/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
+  nav:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+  /* line 79, ../sass/components/_nav.scss */
+  nav ul {
+    display: none;
+  }
+
+  /* line 83, ../sass/components/_nav.scss */
+  .logo {
+    display: block;
+    float: none;
+  }
+
+  /* line 87, ../sass/components/_nav.scss */
+  .mobile_menu {
+    display: block;
+    color: #FFFFFF;
+    font-size: 30px;
+    height: 40px;
+    cursor: pointer;
+  }
+}
 /* line 1, ../sass/components/_body.scss */
 body {
   background: #002331;
@@ -263,6 +349,61 @@ body:after {
   padding-left: 10px;
 }
 
+@media (min-width: 480px) and (max-width: 768px) {
+  /* line 57, ../sass/components/_body.scss */
+  .body_container {
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 12, ../../../.rvm/gems/ruby-2.2.4/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
+  .body_container:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+
+  /* line 60, ../sass/components/_body.scss */
+  .name_section {
+    padding-top: 0;
+    padding-right: 50px;
+    padding-bottom: 0;
+    padding-left: 50px;
+  }
+}
+@media (min-width: 0) and (max-width: 480px) {
+  /* line 66, ../sass/components/_body.scss */
+  .body_container {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  /* line 12, ../../../.rvm/gems/ruby-2.2.4/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
+  .body_container:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+
+  /* line 70, ../sass/components/_body.scss */
+  .name_section,
+  .skill_box {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+  }
+  /* line 74, ../sass/components/_body.scss */
+  .name_section button,
+  .skill_box button {
+    float: none;
+  }
+}
 @font-face {
   font-family: "Coves-Bold";
   src: url('../fonts/Coves-Bold.otf?1453356458') format('opentype');

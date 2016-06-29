@@ -42,3 +42,53 @@ li {
   letter-spacing: 3px;
   @include padding(20px, 20px, 20px, 20px);
 }
+
+.mobile_menu {
+  display: none;
+}
+
+// Let's make navigation to take full 100% width and logo as well so it stacks.
+@include breakpoint(480px 768px) {
+  nav {
+    text-align: center;
+    @include container(100%);
+    ul {
+      display: block;
+      float: none;
+      li {
+        display: inline-block;
+        float: none;
+        a {
+          font-size: 75%;
+          @include padding(20px, 15px, 20px, 15px);
+        }
+      }
+    }
+    .logo {
+      display: block;
+      float: none;
+    }
+  }
+}
+
+// Mobile
+@include breakpoint(0 480px) {
+  nav {
+    text-align: center;
+    @include container(100%);
+    ul {
+      display: none;
+    }
+  }
+  .logo {
+    display: block;
+    float: none;
+  }
+.mobile_menu {
+  display: block;
+  color: $white;
+  font-size: 30px;
+  height: 40px;
+  cursor: pointer;
+  }
+}

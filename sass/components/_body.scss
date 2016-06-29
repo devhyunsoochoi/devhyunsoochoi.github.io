@@ -52,3 +52,27 @@ body {
     }
   }
 }
+
+@include breakpoint(480px 768px) {
+  .body_container {
+    @include container(95%);
+  }
+  .name_section {
+    @include padding(0, 50px, 0, 50px);
+  }
+}
+
+@include breakpoint(0 480px) {
+  .body_container {
+    @include container(100%);
+    text-align: center;
+  }
+  .name_section,
+  .skill_box {
+    @include span(12);
+    @include padding(0, 0, 0, 0);
+    button {
+      float: none;
+    }
+  }
+}
