@@ -8,6 +8,17 @@ body {
   @include container(85%);
 }
 
+.project-1,
+.project-2,
+.project-3,
+.project-4,
+.project-5,
+.project-6,
+.project-7,
+.project-8 {
+  cursor: pointer;
+}
+
 .project-1 {
   @include span(4 of 12);
   height: 300px;

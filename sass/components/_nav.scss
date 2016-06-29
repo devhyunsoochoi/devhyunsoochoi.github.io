@@ -36,11 +36,13 @@ li {
 .logo {
   float: left;
   font-family: "Coves-Light";
-  text-decoration: none;
-  color: $white;
   text-transform: uppercase;
   letter-spacing: 3px;
   @include padding(20px, 20px, 20px, 20px);
+  a {
+    text-decoration: none;
+    color: $white;
+  }
 }
 
 .mobile_menu {
@@ -83,6 +85,7 @@ li {
   .logo {
     display: block;
     float: none;
+    width: 100%;
   }
 .mobile_menu {
   display: block;
