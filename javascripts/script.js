@@ -1,11 +1,17 @@
 $(document).ready(function() {
+  $('.mobile_menu').click( function(){
 
-  $(".mobile_menu").click(function() {
-
-    $("ul").slideToggle(400, function() {
-      $(this).toggleClass("mobile_menu");
-    });
+    $('ul.nav').slideToggle();
 
   });
 
+  $(window).resize(function(){
+
+    if ($(window).width() > 480 ) {
+
+      $('ul.nav').removeAttr('style');
+
+    }
+
+  });
 });
