@@ -240,8 +240,9 @@ li a {
   /* line 81, ../sass/components/_nav.scss */
   nav ul {
     float: none;
+    display: none;
   }
-  /* line 83, ../sass/components/_nav.scss */
+  /* line 84, ../sass/components/_nav.scss */
   nav ul li {
     display: block;
     width: 100%;

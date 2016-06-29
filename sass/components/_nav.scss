@@ -80,13 +80,13 @@ li {
     @include container(100%);
     ul {
       float: none;
+      display: none;
       li {
         display: block;
         width: 100%;
       }
     }
   }
-
   .logo {
     display: block;
     float: none;
