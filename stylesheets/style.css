@@ -87,8 +87,17 @@ header:after {
   clear: both;
 }
 
+@media (min-width: 480px) and (max-width: 768px) {
+  /* line 9, ../sass/components/_header.scss */
+  header {
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+  }
+}
 @media (min-width: 0) and (max-width: 480px) {
-  /* line 8, ../sass/components/_header.scss */
+  /* line 16, ../sass/components/_header.scss */
   header {
     margin-top: 0;
     margin-right: 0;
@@ -458,16 +467,30 @@ body:after {
     display: block;
     clear: both;
   }
-
-  /* line 124, ../sass/components/_body.scss */
-  .name_section {
-    padding-top: 0;
-    padding-right: 50px;
-    padding-bottom: 0;
-    padding-left: 50px;
+  /* line 123, ../sass/components/_body.scss */
+  .body_container .project-1 {
+    display: none;
   }
 
   /* line 127, ../sass/components/_body.scss */
+  .name_section {
+    text-align: center;
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 50px;
+    padding-right: 0;
+    padding-bottom: 50px;
+    padding-left: 0;
+  }
+  /* line 131, ../sass/components/_body.scss */
+  .name_section button {
+    float: none;
+    width: 100%;
+  }
+
+  /* line 136, ../sass/components/_body.scss */
   .project-1,
   .project-2,
   .project-3,
@@ -483,7 +506,7 @@ body:after {
   }
 }
 @media (min-width: 0) and (max-width: 480px) {
-  /* line 142, ../sass/components/_body.scss */
+  /* line 151, ../sass/components/_body.scss */
   .body_container {
     max-width: 95%;
     margin-left: auto;
@@ -496,12 +519,12 @@ body:after {
     display: block;
     clear: both;
   }
-  /* line 145, ../sass/components/_body.scss */
+  /* line 154, ../sass/components/_body.scss */
   .body_container .project-1 {
     display: none;
   }
 
-  /* line 149, ../sass/components/_body.scss */
+  /* line 158, ../sass/components/_body.scss */
   .name_section {
     width: 100%;
     float: left;
@@ -512,13 +535,13 @@ body:after {
     padding-bottom: 50px;
     padding-left: 0;
   }
-  /* line 152, ../sass/components/_body.scss */
+  /* line 161, ../sass/components/_body.scss */
   .name_section button {
     float: none;
     width: 100%;
   }
 
-  /* line 157, ../sass/components/_body.scss */
+  /* line 166, ../sass/components/_body.scss */
   .project-2,
   .project-3,
   .project-4,
@@ -536,7 +559,7 @@ body:after {
     margin-left: 0;
   }
 
-  /* line 167, ../sass/components/_body.scss */
+  /* line 176, ../sass/components/_body.scss */
   .row {
     margin-top: 0;
     margin-right: 0;

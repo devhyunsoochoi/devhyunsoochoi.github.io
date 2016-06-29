@@ -120,9 +120,18 @@ body {
 @include breakpoint(480px 768px) {
   .body_container {
     @include container(95%);
+    .project-1 {
+      display: none;
+    }
   }
   .name_section {
-    @include padding(0, 50px, 0, 50px);
+    text-align: center;
+    @include span(12);
+    @include padding(50px, 0, 50px, 0);
+    button {
+      float: none;
+      width: 100%;
+    }
   }
   .project-1,
   .project-2,
