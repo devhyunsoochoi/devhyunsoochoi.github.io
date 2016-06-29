@@ -79,9 +79,14 @@ li {
     text-align: center;
     @include container(100%);
     ul {
-      display: none;
+      float: none;
+      li {
+        display: block;
+        width: 100%;
+      }
     }
   }
+
   .logo {
     display: block;
     float: none;

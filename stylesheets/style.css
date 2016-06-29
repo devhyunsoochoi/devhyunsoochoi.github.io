@@ -239,17 +239,22 @@ li a {
   }
   /* line 81, ../sass/components/_nav.scss */
   nav ul {
-    display: none;
+    float: none;
+  }
+  /* line 83, ../sass/components/_nav.scss */
+  nav ul li {
+    display: block;
+    width: 100%;
   }
 
-  /* line 85, ../sass/components/_nav.scss */
+  /* line 90, ../sass/components/_nav.scss */
   .logo {
     display: block;
     float: none;
     width: 100%;
   }
 
-  /* line 90, ../sass/components/_nav.scss */
+  /* line 95, ../sass/components/_nav.scss */
   .mobile_menu {
     display: block;
     color: #FFFFFF;
