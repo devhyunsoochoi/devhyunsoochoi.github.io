@@ -79,6 +79,8 @@ header {
   margin-bottom: 100px;
   margin-left: 0;
   background: #00202B;
+  position: fixed;
+  width: 100%;
 }
 /* line 12, ../../../.rvm/gems/ruby-2.2.4/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
 header:after {
@@ -88,7 +90,7 @@ header:after {
 }
 
 @media (min-width: 480px) and (max-width: 768px) {
-  /* line 9, ../sass/components/_header.scss */
+  /* line 11, ../sass/components/_header.scss */
   header {
     margin-top: 0;
     margin-right: 0;
@@ -97,7 +99,7 @@ header:after {
   }
 }
 @media (min-width: 0) and (max-width: 480px) {
-  /* line 16, ../sass/components/_header.scss */
+  /* line 18, ../sass/components/_header.scss */
   header {
     margin-top: 0;
     margin-right: 0;
@@ -263,6 +265,7 @@ body {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
 }
 /* line 12, ../../../.rvm/gems/ruby-2.2.4/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
 body:after {
@@ -271,7 +274,15 @@ body:after {
   clear: both;
 }
 
-/* line 7, ../sass/components/_body.scss */
+/* line 8, ../sass/components/_body.scss */
+main {
+  padding-top: 100px;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+}
+
+/* line 12, ../sass/components/_body.scss */
 .body_container {
   max-width: 85%;
   margin-left: auto;
@@ -284,7 +295,7 @@ body:after {
   clear: both;
 }
 
-/* line 11, ../sass/components/_body.scss */
+/* line 16, ../sass/components/_body.scss */
 .project-1,
 .project-2,
 .project-3,
@@ -299,7 +310,7 @@ body:after {
   -webkit-transition: ease-out 0.2s;
   transition: ease-out 0.2s;
 }
-/* line 21, ../sass/components/_body.scss */
+/* line 26, ../sass/components/_body.scss */
 .project-1:hover,
 .project-2:hover,
 .project-3:hover,
@@ -311,7 +322,7 @@ body:after {
   border: #FD3D50 4px solid;
 }
 
-/* line 26, ../sass/components/_body.scss */
+/* line 31, ../sass/components/_body.scss */
 .project-1 {
   width: 33.06773%;
   float: left;
@@ -321,7 +332,7 @@ body:after {
   background-size: cover;
 }
 
-/* line 33, ../sass/components/_body.scss */
+/* line 38, ../sass/components/_body.scss */
 .name_section {
   width: 66.53386%;
   float: right;
@@ -331,7 +342,7 @@ body:after {
   padding-bottom: 0;
   padding-left: 50px;
 }
-/* line 36, ../sass/components/_body.scss */
+/* line 41, ../sass/components/_body.scss */
 .name_section h1 {
   color: #FFFFFF;
   letter-spacing: 0.5px;
@@ -341,12 +352,12 @@ body:after {
   padding-bottom: 20px;
   padding-left: 0;
 }
-/* line 42, ../sass/components/_body.scss */
+/* line 47, ../sass/components/_body.scss */
 .name_section p {
   color: #507D8F;
   letter-spacing: 0.5px;
 }
-/* line 46, ../sass/components/_body.scss */
+/* line 51, ../sass/components/_body.scss */
 .name_section button {
   float: right;
   cursor: pointer;
@@ -362,11 +373,11 @@ body:after {
   -webkit-transition: ease-out 0.3s;
   transition: ease-out 0.3s;
 }
-/* line 54, ../sass/components/_body.scss */
+/* line 59, ../sass/components/_body.scss */
 .name_section button:hover {
   background: #002331;
 }
-/* line 57, ../sass/components/_body.scss */
+/* line 62, ../sass/components/_body.scss */
 .name_section button p {
   font-size: 130%;
   color: #FFFFFF;
@@ -376,7 +387,7 @@ body:after {
   padding-left: 10px;
 }
 
-/* line 65, ../sass/components/_body.scss */
+/* line 70, ../sass/components/_body.scss */
 .project-2 {
   width: 66.53386%;
   float: left;
@@ -386,7 +397,7 @@ body:after {
   background-size: cover;
 }
 
-/* line 72, ../sass/components/_body.scss */
+/* line 77, ../sass/components/_body.scss */
 .project-3 {
   width: 33.06773%;
   float: right;
@@ -396,7 +407,7 @@ body:after {
   background-size: cover;
 }
 
-/* line 79, ../sass/components/_body.scss */
+/* line 84, ../sass/components/_body.scss */
 .project-4 {
   width: 33.06773%;
   float: left;
@@ -406,7 +417,7 @@ body:after {
   background-size: cover;
 }
 
-/* line 86, ../sass/components/_body.scss */
+/* line 91, ../sass/components/_body.scss */
 .project-5 {
   width: 33.06773%;
   float: left;
@@ -416,7 +427,7 @@ body:after {
   background-size: cover;
 }
 
-/* line 93, ../sass/components/_body.scss */
+/* line 98, ../sass/components/_body.scss */
 .project-6 {
   width: 33.06773%;
   float: right;
@@ -426,7 +437,7 @@ body:after {
   background-size: cover;
 }
 
-/* line 100, ../sass/components/_body.scss */
+/* line 105, ../sass/components/_body.scss */
 .row {
   margin-top: 5px;
   margin-right: 0;
@@ -434,7 +445,7 @@ body:after {
   margin-left: 0;
 }
 
-/* line 104, ../sass/components/_body.scss */
+/* line 109, ../sass/components/_body.scss */
 .project-7 {
   width: 33.06773%;
   float: left;
@@ -444,7 +455,7 @@ body:after {
   background-size: cover;
 }
 
-/* line 111, ../sass/components/_body.scss */
+/* line 116, ../sass/components/_body.scss */
 .project-8 {
   width: 66.53386%;
   float: right;
@@ -455,7 +466,7 @@ body:after {
 }
 
 @media (min-width: 480px) and (max-width: 768px) {
-  /* line 121, ../sass/components/_body.scss */
+  /* line 126, ../sass/components/_body.scss */
   .body_container {
     max-width: 95%;
     margin-left: auto;
@@ -467,12 +478,12 @@ body:after {
     display: block;
     clear: both;
   }
-  /* line 123, ../sass/components/_body.scss */
+  /* line 128, ../sass/components/_body.scss */
   .body_container .project-1 {
     display: none;
   }
 
-  /* line 127, ../sass/components/_body.scss */
+  /* line 132, ../sass/components/_body.scss */
   .name_section {
     text-align: center;
     width: 100%;
@@ -484,29 +495,41 @@ body:after {
     padding-bottom: 50px;
     padding-left: 0;
   }
-  /* line 131, ../sass/components/_body.scss */
+  /* line 136, ../sass/components/_body.scss */
   .name_section button {
     float: none;
     width: 100%;
   }
 
-  /* line 136, ../sass/components/_body.scss */
-  .project-1,
+  /* line 141, ../sass/components/_body.scss */
   .project-2,
   .project-3,
   .project-4,
   .project-5,
   .project-6,
   .project-7,
-  .project-8 {
+  .project-8,
+  .project-9 {
     width: 100%;
     float: left;
     margin-left: 0;
     margin-right: 0;
+    margin-top: 5px;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+  }
+
+  /* line 152, ../sass/components/_body.scss */
+  .row {
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
   }
 }
 @media (min-width: 0) and (max-width: 480px) {
-  /* line 151, ../sass/components/_body.scss */
+  /* line 160, ../sass/components/_body.scss */
   .body_container {
     max-width: 95%;
     margin-left: auto;
@@ -519,12 +542,12 @@ body:after {
     display: block;
     clear: both;
   }
-  /* line 154, ../sass/components/_body.scss */
+  /* line 163, ../sass/components/_body.scss */
   .body_container .project-1 {
     display: none;
   }
 
-  /* line 158, ../sass/components/_body.scss */
+  /* line 167, ../sass/components/_body.scss */
   .name_section {
     width: 100%;
     float: left;
@@ -535,13 +558,13 @@ body:after {
     padding-bottom: 50px;
     padding-left: 0;
   }
-  /* line 161, ../sass/components/_body.scss */
+  /* line 170, ../sass/components/_body.scss */
   .name_section button {
     float: none;
     width: 100%;
   }
 
-  /* line 166, ../sass/components/_body.scss */
+  /* line 175, ../sass/components/_body.scss */
   .project-2,
   .project-3,
   .project-4,
@@ -559,7 +582,7 @@ body:after {
     margin-left: 0;
   }
 
-  /* line 176, ../sass/components/_body.scss */
+  /* line 185, ../sass/components/_body.scss */
   .row {
     margin-top: 0;
     margin-right: 0;
@@ -567,6 +590,28 @@ body:after {
     margin-left: 0;
   }
 }
+/* line 1, ../sass/components/_footer.scss */
+footer {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-top: 20px;
+  padding-right: 0;
+  padding-bottom: 20px;
+  padding-left: 0;
+}
+/* line 12, ../../../.rvm/gems/ruby-2.2.4/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
+footer:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 5, ../sass/components/_footer.scss */
+footer small {
+  color: #FFFFFF;
+}
+
 @font-face {
   font-family: "Coves-Bold";
   src: url('../fonts/Coves-Bold.otf?1453356458') format('opentype');
@@ -575,7 +620,7 @@ body:after {
   font-family: "Coves-Light";
   src: url('../fonts/Coves-Light.otf?1452492420') format('opentype');
 }
-/* line 22, ../sass/style.scss */
+/* line 23, ../sass/style.scss */
 * {
   box-sizing: border-box;
 }

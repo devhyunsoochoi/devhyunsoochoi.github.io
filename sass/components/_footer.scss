@@ -1,0 +1,8 @@
+footer {
+  @include container(90%);
+  text-align: center;
+  @include padding(20px, 0, 20px, 0);
+  small {
+    color: $white;
+  }
+}

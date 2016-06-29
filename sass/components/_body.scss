@@ -2,6 +2,11 @@ body {
   background: $body-background;
   font-family: "Coves-Bold";
   @include container;
+  position: relative;
+}
+
+main {
+  @include padding(100px, 0, 0, 0);
 }
 
 .body_container {
@@ -133,15 +138,19 @@ body {
       width: 100%;
     }
   }
-  .project-1,
   .project-2,
   .project-3,
   .project-4,
   .project-5,
   .project-6,
   .project-7,
-  .project-8, {
+  .project-8,
+  .project-9, {
     @include span(12);
+    @include margin(5px, 0, 0, 0);
+  }
+  .row {
+    @include margin(0, 0, 0, 0);
   }
 }
 
