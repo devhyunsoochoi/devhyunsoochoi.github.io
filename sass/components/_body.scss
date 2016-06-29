@@ -1,6 +1,6 @@
 body {
   background: $body-background;
-  font-family: "Coves-Light";
+  font-family: "Coves-Bold";
   @include container;
 }
 
@@ -17,6 +17,10 @@ body {
 .project-7,
 .project-8 {
   cursor: pointer;
+  @include transition(.2s ease-out);
+  &:hover {
+    border: $nav-active 4px solid;
+  }
 }
 
 .project-1 {
