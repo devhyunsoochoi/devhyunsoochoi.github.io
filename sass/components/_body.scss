@@ -37,7 +37,7 @@ main {
 
 .name_section {
   @include span(8 at 5 of 12);
-  @include padding(0, 100px, 0, 50px);
+  @include padding(50px, 100px, 0, 50px);
   h1 {
     color: $white;
     letter-spacing: 0.5px;
@@ -59,10 +59,12 @@ main {
     &:hover {
       background: $body-background;
     }
-    p {
+    a {
       font-size: 130%;
       color: $white;
       @include padding(10px, 10px, 10px, 10px);
+      text-decoration: none;
+      display: block;
     }
   }
 }
