@@ -24,6 +24,11 @@
   }
 }
 
+.timeline {
+  text-align: center;
+}
+
+// Tablet Layout
 .about-introduction {
   @include padding(100px, 100px, 0, 100px);
   @include span(6 at 7 of 12 $no-gutters);

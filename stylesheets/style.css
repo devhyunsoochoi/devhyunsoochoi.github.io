@@ -665,6 +665,11 @@ footer small {
 }
 
 /* line 27, ../sass/components/_about.scss */
+.timeline {
+  text-align: center;
+}
+
+/* line 32, ../sass/components/_about.scss */
 .about-introduction {
   padding-top: 100px;
   padding-right: 100px;
@@ -677,19 +682,19 @@ footer small {
   color: #161616;
   height: 100%;
 }
-/* line 33, ../sass/components/_about.scss */
+/* line 38, ../sass/components/_about.scss */
 .about-introduction h1 {
   font-family: "Coves-Light";
   font-size: 150%;
   line-height: 50px;
 }
-/* line 38, ../sass/components/_about.scss */
+/* line 43, ../sass/components/_about.scss */
 .about-introduction p {
   font-family: "Coves-light";
 }
 
 @media (min-width: 480px) and (max-width: 768px) {
-  /* line 44, ../sass/components/_about.scss */
+  /* line 49, ../sass/components/_about.scss */
   .about-photo-container,
   .about-introduction {
     width: 100%;
@@ -702,7 +707,7 @@ footer small {
     margin-left: 0;
   }
 
-  /* line 50, ../sass/components/_about.scss */
+  /* line 55, ../sass/components/_about.scss */
   .about-photo-container {
     margin-top: 50px;
     margin-right: 0;
@@ -710,7 +715,7 @@ footer small {
     margin-left: 0;
   }
 
-  /* line 53, ../sass/components/_about.scss */
+  /* line 58, ../sass/components/_about.scss */
   .about-introduction {
     padding-top: 30px;
     padding-right: 30px;
@@ -724,7 +729,7 @@ footer small {
   }
 }
 @media (min-width: 0) and (max-width: 480px) {
-  /* line 62, ../sass/components/_about.scss */
+  /* line 67, ../sass/components/_about.scss */
   .about-photo-container,
   .about-introduction {
     width: 100%;
@@ -737,7 +742,7 @@ footer small {
     margin-left: 0;
   }
 
-  /* line 68, ../sass/components/_about.scss */
+  /* line 73, ../sass/components/_about.scss */
   .about-photo-container {
     margin-top: 50px;
     margin-right: 0;
@@ -745,7 +750,7 @@ footer small {
     margin-left: 0;
   }
 
-  /* line 71, ../sass/components/_about.scss */
+  /* line 76, ../sass/components/_about.scss */
   .about-introduction {
     padding-top: 30px;
     padding-right: 30px;
