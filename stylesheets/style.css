@@ -123,12 +123,12 @@ nav:after {
 }
 
 /* line 7, ../sass/components/_nav.scss */
-ul {
+nav ul {
   float: right;
 }
 
 /* line 11, ../sass/components/_nav.scss */
-li {
+nav li {
   float: left;
   list-style: none;
   -moz-transition: ease-out 0.3s;
@@ -137,15 +137,15 @@ li {
   transition: ease-out 0.3s;
 }
 /* line 15, ../sass/components/_nav.scss */
-li:hover {
+nav li:hover {
   background: #FFFFFF;
 }
 /* line 17, ../sass/components/_nav.scss */
-li:hover a {
+nav li:hover a {
   color: #333333;
 }
 /* line 21, ../sass/components/_nav.scss */
-li a {
+nav li a {
   display: block;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -648,12 +648,16 @@ footer small {
   float: left;
   background: #E1F1F9;
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
+  padding-top: 150px;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
 }
-/* line 17, ../sass/components/_about.scss */
+/* line 16, ../sass/components/_about.scss */
 .about-photo-container .photo {
+  display: inline-block;
+  margin: 0 auto;
   width: 130px;
   height: 130px;
   border-radius: 100%;
@@ -664,12 +668,31 @@ footer small {
   box-shadow: gray 0 0 100px, rgba(181, 213, 229, 0.2) 0 0 3px 1px inset;
 }
 
-/* line 27, ../sass/components/_about.scss */
+/* line 28, ../sass/components/_about.scss */
+.social-icons {
+  display: block;
+}
+
+/* line 32, ../sass/components/_about.scss */
+.linkedin {
+  margin-top: 20px;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  background: url("../images/linkedin.png") center center no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+/* line 42, ../sass/components/_about.scss */
 .timeline {
   text-align: center;
 }
 
-/* line 32, ../sass/components/_about.scss */
+/* line 46, ../sass/components/_about.scss */
 .about-introduction {
   padding-top: 100px;
   padding-right: 100px;
@@ -682,19 +705,20 @@ footer small {
   color: #161616;
   height: 100%;
 }
-/* line 38, ../sass/components/_about.scss */
+/* line 52, ../sass/components/_about.scss */
 .about-introduction h1 {
   font-family: "Coves-Light";
   font-size: 150%;
   line-height: 50px;
 }
-/* line 43, ../sass/components/_about.scss */
+/* line 57, ../sass/components/_about.scss */
 .about-introduction p {
-  font-family: "Coves-light";
+  font-family: "Coves-Light";
+  letter-spacing: 1px;
 }
 
 @media (min-width: 480px) and (max-width: 768px) {
-  /* line 49, ../sass/components/_about.scss */
+  /* line 65, ../sass/components/_about.scss */
   .about-photo-container,
   .about-introduction {
     width: 100%;
@@ -707,7 +731,7 @@ footer small {
     margin-left: 0;
   }
 
-  /* line 55, ../sass/components/_about.scss */
+  /* line 71, ../sass/components/_about.scss */
   .about-photo-container {
     margin-top: 50px;
     margin-right: 0;
@@ -715,11 +739,11 @@ footer small {
     margin-left: 0;
   }
 
-  /* line 58, ../sass/components/_about.scss */
+  /* line 74, ../sass/components/_about.scss */
   .about-introduction {
-    padding-top: 30px;
+    padding-top: 60px;
     padding-right: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 60px;
     padding-left: 30px;
     margin-top: 0;
     margin-right: 0;
@@ -729,7 +753,7 @@ footer small {
   }
 }
 @media (min-width: 0) and (max-width: 480px) {
-  /* line 67, ../sass/components/_about.scss */
+  /* line 83, ../sass/components/_about.scss */
   .about-photo-container,
   .about-introduction {
     width: 100%;
@@ -742,7 +766,7 @@ footer small {
     margin-left: 0;
   }
 
-  /* line 73, ../sass/components/_about.scss */
+  /* line 89, ../sass/components/_about.scss */
   .about-photo-container {
     margin-top: 50px;
     margin-right: 0;
@@ -750,11 +774,11 @@ footer small {
     margin-left: 0;
   }
 
-  /* line 76, ../sass/components/_about.scss */
+  /* line 92, ../sass/components/_about.scss */
   .about-introduction {
-    padding-top: 30px;
+    padding-top: 60px;
     padding-right: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 60px;
     padding-left: 30px;
     margin-top: 0;
     margin-right: 0;

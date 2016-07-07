@@ -4,11 +4,11 @@ nav {
   font-family: "Coves-Bold";
 }
 
-ul {
+nav ul {
   float: right;
 }
 
-li {
+nav li {
     float: left;
     list-style: none;
     @include transition(.3s ease-out);

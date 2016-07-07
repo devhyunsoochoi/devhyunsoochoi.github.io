@@ -4,17 +4,18 @@
 
 .about-container {
   @include container(90%);
-  height: 500px;
+    height: 500px;
 }
 
 .about-photo-container {
   @include span(6 of 12 $no-gutters);
   background: #E1F1F9;
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
+  @include padding(150px, 0, 0, 0);
   .photo {
+    display: inline-block;
+    margin: 0 auto;
     width: 130px;
     height: 130px;
     border-radius: 100%;
@@ -24,11 +25,24 @@
   }
 }
 
+.social-icons {
+  display: block;
+}
+
+.linkedin {
+  @include margin(20px, 0, 0, 0);
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  background: url('../images/linkedin.png') center center no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
 .timeline {
   text-align: center;
 }
 
-// Tablet Layout
 .about-introduction {
   @include padding(100px, 100px, 0, 100px);
   @include span(6 at 7 of 12 $no-gutters);
@@ -41,10 +55,12 @@
     line-height: 50px;
   }
   p {
-    font-family: "Coves-light";
+    font-family: "Coves-Light";
+    letter-spacing: 1px;
   }
 }
 
+// Tablet Layout
 @include breakpoint(480px 768px) {
   .about-photo-container,
   .about-introduction {
@@ -56,7 +72,7 @@
     @include margin(50px, 0, 0, 0);
   }
   .about-introduction {
-    @include padding(30px, 30px, 30px, 30px);
+    @include padding(60px, 30px, 60px, 30px);
     @include margin(0, 0, 0, 0);
     height: auto;
   }
@@ -74,7 +90,7 @@
     @include margin(50px, 0, 0, 0);
   }
   .about-introduction {
-    @include padding(30px, 30px, 30px, 30px);
+    @include padding(60px, 30px, 60px, 30px);
     @include margin(0, 0, 0, 0);
     height: auto;
   }
