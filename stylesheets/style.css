@@ -267,7 +267,6 @@ li a {
 /* line 1, ../sass/components/_body.scss */
 body {
   background: #002331;
-  font-family: "Coves-Bold";
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -280,12 +279,13 @@ body:after {
   clear: both;
 }
 
-/* line 8, ../sass/components/_body.scss */
-main {
+/* line 7, ../sass/components/_body.scss */
+.index-main {
   padding-top: 100px;
   padding-right: 0;
   padding-bottom: 0;
   padding-left: 0;
+  font-family: "Coves-Bold";
 }
 
 /* line 12, ../sass/components/_body.scss */
@@ -620,6 +620,144 @@ footer small {
   color: #FFFFFF;
 }
 
+/* line 1, ../sass/components/_about.scss */
+.about-main {
+  padding-top: 100px;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+}
+
+/* line 5, ../sass/components/_about.scss */
+.about-container {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 500px;
+}
+/* line 12, ../../../.rvm/gems/ruby-2.2.4/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
+.about-container:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* line 10, ../sass/components/_about.scss */
+.about-photo-container {
+  width: 50%;
+  float: left;
+  background: #E1F1F9;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* line 17, ../sass/components/_about.scss */
+.about-photo-container .photo {
+  width: 130px;
+  height: 130px;
+  border-radius: 100%;
+  background: url("../images/profile.jpg") top no-repeat;
+  background-size: 100%;
+  -moz-box-shadow: gray 0 0 100px, rgba(181, 213, 229, 0.2) 0 0 3px 1px inset;
+  -webkit-box-shadow: gray 0 0 100px, rgba(181, 213, 229, 0.2) 0 0 3px 1px inset;
+  box-shadow: gray 0 0 100px, rgba(181, 213, 229, 0.2) 0 0 3px 1px inset;
+}
+
+/* line 27, ../sass/components/_about.scss */
+.about-introduction {
+  padding-top: 100px;
+  padding-right: 100px;
+  padding-bottom: 0;
+  padding-left: 100px;
+  width: 50%;
+  float: right;
+  margin-right: 0;
+  background: #FFFFFF;
+  color: #161616;
+  height: 100%;
+}
+/* line 33, ../sass/components/_about.scss */
+.about-introduction h1 {
+  font-family: "Coves-Light";
+  font-size: 150%;
+  line-height: 50px;
+}
+/* line 38, ../sass/components/_about.scss */
+.about-introduction p {
+  font-family: "Coves-light";
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+  /* line 44, ../sass/components/_about.scss */
+  .about-photo-container,
+  .about-introduction {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 5px;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+  }
+
+  /* line 50, ../sass/components/_about.scss */
+  .about-photo-container {
+    margin-top: 50px;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+  }
+
+  /* line 53, ../sass/components/_about.scss */
+  .about-introduction {
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    height: auto;
+  }
+}
+@media (min-width: 0) and (max-width: 480px) {
+  /* line 62, ../sass/components/_about.scss */
+  .about-photo-container,
+  .about-introduction {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 5px;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+  }
+
+  /* line 68, ../sass/components/_about.scss */
+  .about-photo-container {
+    margin-top: 50px;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+  }
+
+  /* line 71, ../sass/components/_about.scss */
+  .about-introduction {
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    height: auto;
+  }
+}
 @font-face {
   font-family: "Coves-Bold";
   src: url('../fonts/Coves-Bold.otf?1453356458') format('opentype');
@@ -628,7 +766,7 @@ footer small {
   font-family: "Coves-Light";
   src: url('../fonts/Coves-Light.otf?1452492420') format('opentype');
 }
-/* line 23, ../sass/style.scss */
+/* line 26, ../sass/style.scss */
 * {
   box-sizing: border-box;
 }

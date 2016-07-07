@@ -1,12 +1,12 @@
 body {
   background: $body-background;
-  font-family: "Coves-Bold";
   @include container;
   position: relative;
 }
 
-main {
+.index-main {
   @include padding(100px, 0, 0, 0);
+  font-family: "Coves-Bold";
 }
 
 .body_container {

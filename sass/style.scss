@@ -7,6 +7,8 @@
 @import "breakpoint";
 @import "compass/css3/font-face";
 @import "compass/css3/transition";
+@import "compass/css3/box-shadow";
+@import 'compass/css3/filter';
 @import "compass/typography/vertical_rhythm";
 @import "layout/grids";
 @import "partials/mixins";
@@ -15,6 +17,7 @@
 @import "components/nav";
 @import "components/body";
 @import "components/footer";
+@import "components/about";
 
 //Default Font
 @include font-face("Coves-Bold", font-files("Coves-Bold.otf"));
