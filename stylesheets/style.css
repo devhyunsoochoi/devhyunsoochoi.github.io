@@ -676,7 +676,7 @@ footer small {
 /* line 32, ../sass/components/_about.scss */
 .linkedin {
   margin-top: 20px;
-  margin-right: 0;
+  margin-right: 10px;
   margin-bottom: 0;
   margin-left: 0;
   height: 20px;
@@ -688,11 +688,34 @@ footer small {
 }
 
 /* line 42, ../sass/components/_about.scss */
-.timeline {
-  text-align: center;
+.social-icons a {
+  text-decoration: none;
 }
 
 /* line 46, ../sass/components/_about.scss */
+.github {
+  margin-top: 20px;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 10px;
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  background: url("../images/github.png") center center no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+/* line 56, ../sass/components/_about.scss */
+.timeline {
+  text-align: center;
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* line 61, ../sass/components/_about.scss */
 .about-introduction {
   padding-top: 100px;
   padding-right: 100px;
@@ -706,33 +729,33 @@ footer small {
   color: #161616;
   height: 100%;
 }
-/* line 55, ../sass/components/_about.scss */
+/* line 70, ../sass/components/_about.scss */
 .about-introduction h1 {
   font-family: "Coves-Light";
   font-size: 150%;
   line-height: 50px;
 }
-/* line 60, ../sass/components/_about.scss */
+/* line 75, ../sass/components/_about.scss */
 .about-introduction p {
   font-family: "Coves-Light";
   letter-spacing: 1px;
 }
 
-/* line 66, ../sass/components/_about.scss */
+/* line 81, ../sass/components/_about.scss */
 ::-webkit-scrollbar {
   display: none;
 }
 
-/* line 70, ../sass/components/_about.scss */
+/* line 85, ../sass/components/_about.scss */
 .timeline {
-  width: 100%;
+  width: 12c;
   float: left;
   margin-left: 0;
   margin-right: 0;
 }
 
 @media (min-width: 480px) and (max-width: 768px) {
-  /* line 76, ../sass/components/_about.scss */
+  /* line 91, ../sass/components/_about.scss */
   .about-container {
     max-width: 95%;
     margin-left: auto;
@@ -745,7 +768,7 @@ footer small {
     clear: both;
   }
 
-  /* line 79, ../sass/components/_about.scss */
+  /* line 94, ../sass/components/_about.scss */
   .about-photo-container,
   .about-introduction {
     width: 100%;
@@ -758,7 +781,7 @@ footer small {
     margin-left: 0;
   }
 
-  /* line 85, ../sass/components/_about.scss */
+  /* line 100, ../sass/components/_about.scss */
   .about-photo-container {
     margin-top: 50px;
     margin-right: 0;
@@ -766,7 +789,7 @@ footer small {
     margin-left: 0;
   }
 
-  /* line 88, ../sass/components/_about.scss */
+  /* line 103, ../sass/components/_about.scss */
   .about-introduction {
     padding-top: 60px;
     padding-right: 30px;
@@ -780,7 +803,7 @@ footer small {
   }
 }
 @media (min-width: 0) and (max-width: 480px) {
-  /* line 97, ../sass/components/_about.scss */
+  /* line 112, ../sass/components/_about.scss */
   .about-container {
     max-width: 95%;
     margin-left: auto;
@@ -793,7 +816,7 @@ footer small {
     clear: both;
   }
 
-  /* line 101, ../sass/components/_about.scss */
+  /* line 116, ../sass/components/_about.scss */
   .about-photo-container,
   .about-introduction {
     width: 100%;
@@ -806,7 +829,7 @@ footer small {
     margin-left: 0;
   }
 
-  /* line 107, ../sass/components/_about.scss */
+  /* line 122, ../sass/components/_about.scss */
   .about-photo-container {
     margin-top: 50px;
     margin-right: 0;
@@ -814,7 +837,7 @@ footer small {
     margin-left: 0;
   }
 
-  /* line 110, ../sass/components/_about.scss */
+  /* line 125, ../sass/components/_about.scss */
   .about-introduction {
     padding-top: 60px;
     padding-right: 30px;

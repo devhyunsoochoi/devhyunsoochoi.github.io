@@ -30,7 +30,7 @@
 }
 
 .linkedin {
-  @include margin(20px, 0, 0, 0);
+  @include margin(20px, 10px, 0, 0);
   height: 20px;
   width: 20px;
   display: inline-block;
@@ -39,8 +39,23 @@
   cursor: pointer;
 }
 
+.social-icons a {
+  text-decoration: none;
+}
+
+.github {
+  @include margin(20px, 0, 0, 10px);
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  background: url('../images/github.png') center center no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
 .timeline {
   text-align: center;
+  @include span(12);
 }
 
 .about-introduction {
@@ -68,7 +83,7 @@
 }
 
 .timeline {
-  @include span(12);
+  @include span(12c);
 }
 
 // Tablet Layout
