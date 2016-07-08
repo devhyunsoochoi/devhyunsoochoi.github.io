@@ -1,0 +1,41 @@
+.contact-main {
+  @include padding(100px, 0, 0, 0);
+}
+
+.contact-container {
+  @include container(90%);
+}
+
+.stock-image,
+.contact-introduction {
+  height: 500px;
+}
+
+.stock-image {
+  @include span(6 of 12 $no-gutters);
+  background: url("../images/imac.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.contact-introduction {
+  @include span(6 at 7 of 12);
+  background-color: $white;
+  color: $black;
+  font-family: 'Coves-Light';
+  font-size: 20px;
+  @include padding(130px, 20px, 0, 20px);
+}
+
+.iphone {
+  @include margin(20px, 0, 0, 0);
+  height: 30px;
+  width: 30px;
+  background: url('../images/iphone.png') center center no-repeat;
+  background-size: cover;
+  display: inline-block;
+}
+
+.contact-introduction a {
+  text-decoration: none;
+  color: $black;
+}

@@ -849,7 +849,81 @@ footer small {
     margin-left: 0;
     height: auto;
   }
+
+  /* line 130, ../sass/components/_about.scss */
+  .timeline {
+    height: 100vh;
+  }
 }
+/* line 1, ../sass/components/_contact.scss */
+.contact-main {
+  padding-top: 100px;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+}
+
+/* line 5, ../sass/components/_contact.scss */
+.contact-container {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, ../../../.rvm/gems/ruby-2.2.4/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
+.contact-container:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* line 9, ../sass/components/_contact.scss */
+.stock-image,
+.contact-introduction {
+  height: 500px;
+}
+
+/* line 14, ../sass/components/_contact.scss */
+.stock-image {
+  width: 50%;
+  float: left;
+  background: url("../images/imac.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+/* line 20, ../sass/components/_contact.scss */
+.contact-introduction {
+  width: 49.8008%;
+  float: right;
+  margin-right: 0;
+  background-color: #FFFFFF;
+  color: #333333;
+  font-family: 'Coves-Light';
+  font-size: 20px;
+  padding-top: 130px;
+  padding-right: 20px;
+  padding-bottom: 0;
+  padding-left: 20px;
+}
+
+/* line 29, ../sass/components/_contact.scss */
+.iphone {
+  margin-top: 20px;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  height: 30px;
+  width: 30px;
+  background: url("../images/iphone.png") center center no-repeat;
+  background-size: cover;
+  display: inline-block;
+}
+
+/* line 38, ../sass/components/_contact.scss */
+.contact-introduction a {
+  text-decoration: none;
+  color: #333333;
+}
+
 @font-face {
   font-family: "Coves-Bold";
   src: url('../fonts/Coves-Bold.otf?1453356458') format('opentype');
@@ -858,7 +932,7 @@ footer small {
   font-family: "Coves-Light";
   src: url('../fonts/Coves-Light.otf?1452492420') format('opentype');
 }
-/* line 26, ../sass/style.scss */
+/* line 27, ../sass/style.scss */
 * {
   box-sizing: border-box;
 }
