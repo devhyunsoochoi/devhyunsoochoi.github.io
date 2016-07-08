@@ -723,8 +723,16 @@ footer small {
   display: none;
 }
 
+/* line 70, ../sass/components/_about.scss */
+.timeline {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+}
+
 @media (min-width: 480px) and (max-width: 768px) {
-  /* line 72, ../sass/components/_about.scss */
+  /* line 76, ../sass/components/_about.scss */
   .about-container {
     max-width: 95%;
     margin-left: auto;
@@ -737,7 +745,7 @@ footer small {
     clear: both;
   }
 
-  /* line 75, ../sass/components/_about.scss */
+  /* line 79, ../sass/components/_about.scss */
   .about-photo-container,
   .about-introduction {
     width: 100%;
@@ -750,7 +758,7 @@ footer small {
     margin-left: 0;
   }
 
-  /* line 81, ../sass/components/_about.scss */
+  /* line 85, ../sass/components/_about.scss */
   .about-photo-container {
     margin-top: 50px;
     margin-right: 0;
@@ -758,7 +766,7 @@ footer small {
     margin-left: 0;
   }
 
-  /* line 84, ../sass/components/_about.scss */
+  /* line 88, ../sass/components/_about.scss */
   .about-introduction {
     padding-top: 60px;
     padding-right: 30px;
@@ -772,7 +780,7 @@ footer small {
   }
 }
 @media (min-width: 0) and (max-width: 480px) {
-  /* line 93, ../sass/components/_about.scss */
+  /* line 97, ../sass/components/_about.scss */
   .about-container {
     max-width: 95%;
     margin-left: auto;
@@ -785,7 +793,7 @@ footer small {
     clear: both;
   }
 
-  /* line 97, ../sass/components/_about.scss */
+  /* line 101, ../sass/components/_about.scss */
   .about-photo-container,
   .about-introduction {
     width: 100%;
@@ -798,7 +806,7 @@ footer small {
     margin-left: 0;
   }
 
-  /* line 103, ../sass/components/_about.scss */
+  /* line 107, ../sass/components/_about.scss */
   .about-photo-container {
     margin-top: 50px;
     margin-right: 0;
@@ -806,7 +814,7 @@ footer small {
     margin-left: 0;
   }
 
-  /* line 106, ../sass/components/_about.scss */
+  /* line 110, ../sass/components/_about.scss */
   .about-introduction {
     padding-top: 60px;
     padding-right: 30px;

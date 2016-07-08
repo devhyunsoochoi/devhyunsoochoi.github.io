@@ -67,6 +67,10 @@
   display: none;
 }
 
+.timeline {
+  @include span(12);
+}
+
 // Tablet Layout
 @include breakpoint(480px 768px) {
   .about-container {
