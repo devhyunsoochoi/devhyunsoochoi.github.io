@@ -924,6 +924,76 @@ footer small {
   color: #333333;
 }
 
+/* line 43, ../sass/components/_contact.scss */
+.contact-form {
+  width: 49.8008%;
+  float: right;
+  margin-right: 0;
+  padding-top: 50px;
+  padding-right: 200px;
+  padding-bottom: 0;
+  padding-left: 40px;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 50px;
+  margin-left: 0;
+  height: 500px;
+  color: #FFFFFF;
+  font-family: "Coves-Bold";
+}
+
+/* line 52, ../sass/components/_contact.scss */
+input {
+  margin-top: 5px;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+}
+
+/* line 56, ../sass/components/_contact.scss */
+label {
+  margin-top: 10px;
+  margin-right: 0;
+  margin-bottom: 10px;
+  margin-left: 0;
+  display: block;
+}
+
+/* line 61, ../sass/components/_contact.scss */
+textarea, textarea:focus, input, input:focus {
+  color: #507d8f;
+  outline: none;
+  font-family: "Coves-Light";
+  font-size: 20px;
+  width: 100%;
+}
+
+/* line 69, ../sass/components/_contact.scss */
+form button {
+  float: right;
+  cursor: pointer;
+  margin-top: 30px;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  padding-top: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  border: 1px #2fa4f1 solid;
+  background: #2fa4f1;
+  border-radius: 55px;
+  -moz-transition: ease-out 0.3s;
+  -o-transition: ease-out 0.3s;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+  color: #FFFFFF;
+}
+/* line 79, ../sass/components/_contact.scss */
+form button:hover {
+  background: #002331;
+}
+
 @font-face {
   font-family: "Coves-Bold";
   src: url('../fonts/Coves-Bold.otf?1453356458') format('opentype');

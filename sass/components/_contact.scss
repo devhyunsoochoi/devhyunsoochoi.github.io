@@ -39,3 +39,44 @@
   text-decoration: none;
   color: $black;
 }
+
+.contact-form {
+  @include span(6 of 12 last);
+  @include padding(50px, 200px, 0, 40px);
+  @include margin(0, 0, 50px, 0);
+  height: 500px;
+  color: $white;
+  font-family: "Coves-Bold";
+}
+
+input {
+  @include margin(5px, 0, 0, 0);
+}
+
+label {
+  @include margin(10px, 0, 10px, 0);
+  display: block;
+}
+
+textarea, textarea:focus, input, input:focus {
+    color: #507d8f;
+    outline: none;
+    font-family: "Coves-Light";
+    font-size: 20px;
+    width: 100%;
+}
+
+form   button {
+    float: right;
+    cursor: pointer;
+    @include margin(30px, 0, 0, 0);
+    @include padding(5px, 5px, 5px, 5px);
+    border: 1px $learn-more-color solid;
+    background: $learn-more-color;
+    border-radius: 55px;
+    @include transition(.3s ease-out);
+    color: $white;
+    &:hover {
+      background: $body-background;
+    }
+  }
