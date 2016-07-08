@@ -701,24 +701,43 @@ footer small {
   width: 50%;
   float: right;
   margin-right: 0;
+  overflow-y: scroll;
   background: #FFFFFF;
   color: #161616;
   height: 100%;
 }
-/* line 52, ../sass/components/_about.scss */
+/* line 55, ../sass/components/_about.scss */
 .about-introduction h1 {
   font-family: "Coves-Light";
   font-size: 150%;
   line-height: 50px;
 }
-/* line 57, ../sass/components/_about.scss */
+/* line 60, ../sass/components/_about.scss */
 .about-introduction p {
   font-family: "Coves-Light";
   letter-spacing: 1px;
 }
 
+/* line 66, ../sass/components/_about.scss */
+::-webkit-scrollbar {
+  display: none;
+}
+
 @media (min-width: 480px) and (max-width: 768px) {
-  /* line 65, ../sass/components/_about.scss */
+  /* line 72, ../sass/components/_about.scss */
+  .about-container {
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 12, ../../../.rvm/gems/ruby-2.2.4/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
+  .about-container:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+
+  /* line 75, ../sass/components/_about.scss */
   .about-photo-container,
   .about-introduction {
     width: 100%;
@@ -731,7 +750,7 @@ footer small {
     margin-left: 0;
   }
 
-  /* line 71, ../sass/components/_about.scss */
+  /* line 81, ../sass/components/_about.scss */
   .about-photo-container {
     margin-top: 50px;
     margin-right: 0;
@@ -739,7 +758,7 @@ footer small {
     margin-left: 0;
   }
 
-  /* line 74, ../sass/components/_about.scss */
+  /* line 84, ../sass/components/_about.scss */
   .about-introduction {
     padding-top: 60px;
     padding-right: 30px;
@@ -753,7 +772,20 @@ footer small {
   }
 }
 @media (min-width: 0) and (max-width: 480px) {
-  /* line 83, ../sass/components/_about.scss */
+  /* line 93, ../sass/components/_about.scss */
+  .about-container {
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 12, ../../../.rvm/gems/ruby-2.2.4/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
+  .about-container:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+
+  /* line 97, ../sass/components/_about.scss */
   .about-photo-container,
   .about-introduction {
     width: 100%;
@@ -766,7 +798,7 @@ footer small {
     margin-left: 0;
   }
 
-  /* line 89, ../sass/components/_about.scss */
+  /* line 103, ../sass/components/_about.scss */
   .about-photo-container {
     margin-top: 50px;
     margin-right: 0;
@@ -774,7 +806,7 @@ footer small {
     margin-left: 0;
   }
 
-  /* line 92, ../sass/components/_about.scss */
+  /* line 106, ../sass/components/_about.scss */
   .about-introduction {
     padding-top: 60px;
     padding-right: 30px;
