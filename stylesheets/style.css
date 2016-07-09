@@ -930,9 +930,9 @@ footer small {
   float: right;
   margin-right: 0;
   padding-top: 50px;
-  padding-right: 200px;
+  padding-right: 0;
   padding-bottom: 0;
-  padding-left: 40px;
+  padding-left: 0;
   margin-top: 0;
   margin-right: 0;
   margin-bottom: 50px;
@@ -976,10 +976,10 @@ form button {
   margin-right: 0;
   margin-bottom: 0;
   margin-left: 0;
-  padding-top: 5px;
-  padding-right: 5px;
-  padding-bottom: 5px;
-  padding-left: 5px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
   border: 1px #2fa4f1 solid;
   background: #2fa4f1;
   border-radius: 55px;
@@ -994,6 +994,54 @@ form button:hover {
   background: #002331;
 }
 
+@media (min-width: 480px) and (max-width: 768px) {
+  /* line 86, ../sass/components/_contact.scss */
+  .contact-main {
+    padding-top: 150px;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+  }
+
+  /* line 89, ../sass/components/_contact.scss */
+  .contact-form {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+@media (min-width: 0) and (max-width: 480px) {
+  /* line 96, ../sass/components/_contact.scss */
+  .contact-container {
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 12, ../../../.rvm/gems/ruby-2.2.4/gems/susy-2.2.12/sass/susy/output/support/_clearfix.scss */
+  .contact-container:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+
+  /* line 99, ../sass/components/_contact.scss */
+  .stock-image,
+  .contact-introduction,
+  .contact-form {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+  }
+
+  /* line 105, ../sass/components/_contact.scss */
+  .contact-introduction {
+    height: auto;
+    padding: 50px;
+  }
+}
 @font-face {
   font-family: "Coves-Bold";
   src: url('../fonts/Coves-Bold.otf?1453356458') format('opentype');

@@ -42,7 +42,7 @@
 
 .contact-form {
   @include span(6 of 12 last);
-  @include padding(50px, 200px, 0, 40px);
+  @include padding(50px, 0, 0, 0);
   @include margin(0, 0, 50px, 0);
   height: 500px;
   color: $white;
@@ -66,11 +66,11 @@ textarea, textarea:focus, input, input:focus {
     width: 100%;
 }
 
-form   button {
+form button {
     float: right;
     cursor: pointer;
     @include margin(30px, 0, 0, 0);
-    @include padding(5px, 5px, 5px, 5px);
+    @include padding(10px, 10px, 10px, 10px);
     border: 1px $learn-more-color solid;
     background: $learn-more-color;
     border-radius: 55px;
@@ -80,3 +80,31 @@ form   button {
       background: $body-background;
     }
   }
+
+// Tablet Layout
+@include breakpoint(480px 768px) {
+  .contact-main {
+    @include padding(150px, 0, 0, 0);
+  }
+  .contact-form {
+    @include span(12 of 12);
+  }
+}
+
+// Mobile Layout
+@include breakpoint(0 480px)  {
+  .contact-container {
+    @include container(95%);
+  }
+  .stock-image,
+  .contact-introduction,
+  .contact-form {
+    @include span(12 of 12);
+    text-align: center;
+  }
+  .contact-introduction {
+    height: auto;
+    padding: 50px;
+  }
+
+}
