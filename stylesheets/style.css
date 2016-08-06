@@ -995,7 +995,7 @@ form button:hover {
 }
 
 @media (min-width: 480px) and (max-width: 768px) {
-  /* line 86, ../sass/components/_contact.scss */
+  /* line 87, ../sass/components/_contact.scss */
   .contact-main {
     padding-top: 150px;
     padding-right: 0;
@@ -1003,7 +1003,7 @@ form button:hover {
     padding-left: 0;
   }
 
-  /* line 89, ../sass/components/_contact.scss */
+  /* line 90, ../sass/components/_contact.scss */
   .contact-form {
     width: 100%;
     float: left;
@@ -1012,7 +1012,7 @@ form button:hover {
   }
 }
 @media (min-width: 0) and (max-width: 480px) {
-  /* line 96, ../sass/components/_contact.scss */
+  /* line 97, ../sass/components/_contact.scss */
   .contact-container {
     max-width: 95%;
     margin-left: auto;
@@ -1025,7 +1025,7 @@ form button:hover {
     clear: both;
   }
 
-  /* line 99, ../sass/components/_contact.scss */
+  /* line 100, ../sass/components/_contact.scss */
   .stock-image,
   .contact-introduction,
   .contact-form {
@@ -1036,7 +1036,7 @@ form button:hover {
     text-align: center;
   }
 
-  /* line 105, ../sass/components/_contact.scss */
+  /* line 106, ../sass/components/_contact.scss */
   .contact-introduction {
     height: auto;
     padding: 50px;

@@ -12,10 +12,20 @@
  		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
  		<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
  		<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-82060665-1', 'auto');
+    ga('send', 'pageview');
+
+    </script>
     <body>
       <header>
         <nav>
-          <h1 class="logo"><a href="#">HyunsooChoi</a></h1>
+          <h1 class="logo"><a href="index.html">HyunsooChoi</a></h1>
           <a class="mobile_menu">&#9776;</a>
           <ul class="nav">
             <li><a href="index.html">Home</a></li>
@@ -39,7 +49,7 @@
             <a href="tel:469-629-9236">469.629.9236</a>
           </section>
           <section class="contact-form">
-            <form action="https://formspree.io/dev.hyunsoo@gmail.com" method="POST">
+            <form id="contact" action="https://formspree.io/dev.hyunsoo@gmail.com" method="POST">
               <label for="name">YOUR NAME - REQUIRED<br /></label>
                 <input type="text" name="name" id="name" required/>
               <label for="mail">YOUR EMAIL - REQUIRED<br /></label>
@@ -50,6 +60,8 @@
                 <textarea rows="5" cols="68"></textarea>
                 <br />
                 <button>Submit</button>
+                <input type="hidden" name="_next" value="devhyunsoochoi.github.io/index.hics
+                tml" />
             </form>
           </section>
         </div>
