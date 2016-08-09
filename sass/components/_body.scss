@@ -31,8 +31,8 @@ body {
 .project-1 {
   @include span(4 of 12);
   height: 300px;
-  background: url("../images/email.gif") center no-repeat;
-  background-size: cover;
+  background: url("../images/responsive.gif") center no-repeat;
+  background-size: contain;
   }
 
 .name_section {
@@ -73,14 +73,14 @@ body {
 .project-2 {
   @include span(8 of 12);
   height: 250px;
-  background: url("../images/artella.jpg") center no-repeat;
+  background: url("../images/rocket.png") center no-repeat;
   background-size: cover;
 }
 
 .project-3 {
   @include span(4 at 9 of 12);
   height: 250px;
-  background: url("../images/br.jpg") center no-repeat;
+  background: url("../images/email.gif") center no-repeat;
   background-size: cover;
 }
 
@@ -101,7 +101,7 @@ body {
 .project-6 {
   @include span(4 at 9 of 12);
   height: 250px;
-  background: url("../images/responsive.gif") center no-repeat;
+  background: url("../images/life.png") center no-repeat;
   background-size: cover;
 }
 

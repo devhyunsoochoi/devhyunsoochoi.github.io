@@ -334,8 +334,8 @@ body:after {
   float: left;
   margin-right: 0.39841%;
   height: 300px;
-  background: url("../images/email.gif") center no-repeat;
-  background-size: cover;
+  background: url("../images/responsive.gif") center no-repeat;
+  background-size: contain;
 }
 
 /* line 38, ../sass/components/_body.scss */
@@ -401,7 +401,7 @@ body:after {
   float: left;
   margin-right: 0.39841%;
   height: 250px;
-  background: url("../images/artella.jpg") center no-repeat;
+  background: url("../images/rocket.png") center no-repeat;
   background-size: cover;
 }
 
@@ -411,7 +411,7 @@ body:after {
   float: right;
   margin-right: 0;
   height: 250px;
-  background: url("../images/br.jpg") center no-repeat;
+  background: url("../images/email.gif") center no-repeat;
   background-size: cover;
 }
 
@@ -441,7 +441,7 @@ body:after {
   float: right;
   margin-right: 0;
   height: 250px;
-  background: url("../images/responsive.gif") center no-repeat;
+  background: url("../images/life.png") center no-repeat;
   background-size: cover;
 }
 
